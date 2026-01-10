@@ -13,17 +13,21 @@
     <title>Clean Blog Jekyll</title>
     <style>
       header {
-        background-image: url(./img/bg-index.jpg);
+        background-image: linear-gradient(
+            rgba(34, 38, 42, 0.5),
+            rgba(34, 38, 42, 0.5)
+          ),
+          url(./../../../img/01.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        min-height: 45vh;
+        min-height: 525px;
       }
     </style>
   </head>
   <body>
     <header class="d-flex flex-column mb-5">
-      <nav class="navbar navbar-expand-lg bg-light text-uppercase">
+      <nav class="navbar navbar-expand-lg fw-bolder navbar-dark bg-transparent">
         <div class="container">
           <a class="navbar-brand" href="./../../../index.html">Clean Blog</a>
           <button
@@ -41,7 +45,7 @@
             <ul class="navbar-nav ms-auto gap-4">
               <li class="nav-item">
                 <a
-                  class="nav-link active"
+                  class="nav-link active text-uppercase"
                   aria-current="page"
                   href="../../../index.html"
                   >Home</a
@@ -49,7 +53,7 @@
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link active"
+                  class="nav-link active text-uppercase"
                   aria-current="page"
                   href="./../../../about.html"
                   >About</a
@@ -57,7 +61,7 @@
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link active"
+                  class="nav-link active text-uppercase"
                   aria-current="page"
                   href="../../../posts/index.html"
                   >Posts</a
@@ -65,7 +69,7 @@
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link active"
+                  class="nav-link active text-uppercase"
                   aria-current="page"
                   href="./../../../contact.html"
                   >Contact</a
@@ -86,7 +90,7 @@
         <p>Posted by Start Bootstrap on January 27, 2020 · 4 mins read</p>
       </div>
     </header>
-    <main>
+    <main class="container fs-5 d-flex flex-column gap-2">
       <p>
         Never in all their history have men been able truly to conceive of the
         world as one: a single sphere, a globe, having the qualities of a globe,
@@ -116,7 +120,7 @@
         your perspective. The things that we share in our world are far more
         valuable than those which divide us.
       </p>
-      <h2>The Final Frontier</h2>
+      <h2 class="mt-4 mb-3">The Final Frontier</h2>
       <p>
         There can be no thought of finishing for ‘aiming for the stars.’ Both
         figuratively and literally, it is a task to occupy the generations. And
@@ -129,7 +133,7 @@
         no matter how much progress one makes, there is always the thrill of
         just beginning.
       </p>
-      <p>
+      <p class="text-secondary">
         The dreams of yesterday are the hopes of today and the reality of
         tomorrow. Science has not yet mastered prophecy. We predict too much for
         the next year and yet far too little for the next ten.
@@ -139,7 +143,7 @@
         even a group of men. It is a historical process which mankind is
         carrying out in accordance with the natural laws of human development.
       </p>
-      <h2>Reaching for the Stars</h2>
+      <h2 class="mt-4 mb-3">Reaching for the Stars</h2>
       <p>
         As we got further and further away, it [the Earth] diminished in size.
         Finally it shrank to the size of a marble, the most beautiful you can
@@ -152,7 +156,7 @@
           src="https://unsplash.com/photos/silhouette-of-man-standing-on-hill-during-starry-night-C6duwascOEA"
           alt="Demo Image"
         />
-        <figcaption>
+        <figcaption class="blockquote-footer mt-1 ps-5 fs-6">
           To go places and do things that have never been done before – that’s
           what living is all about.
         </figcaption>
@@ -169,24 +173,28 @@
         this is exploration at its greatest.
       </p>
       <p>
-        Placeholder text by <a href="http://spaceipsum.com/">Space Ipsum</a>.
-        Photographs by <a href="https://unsplash.com/">Unsplash</a>.
+        Placeholder text by
+        <a class="link-dark" href="http://spaceipsum.com/">Space Ipsum</a>.
+        Photographs by
+        <a class="link-dark" href="https://unsplash.com/">Unsplash</a>.
       </p>
-      <div class="d-flex justify-content-end container">
+      <div class="d-flex justify-content-start">
         <a
           href="./../index.html"
-          class="p-3 text-uppercase fw-bold text-bg-primary"
+          class="py-3 px-4 text-uppercase fw-bold text-light bg-info text-decoration-none fs-6"
           >← Previous post</a
         >
       </div>
     </main>
     <footer class="border-top py-5">
-      <ul class="social-links d-flex justify-content-center gap-4">
+      <ul
+        class="social-links d-flex justify-content-center gap-4 list-unstyled"
+      >
         <li class="social-media-link">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
+            width="32"
+            height="32"
             fill="currentColor"
             class="bi bi-envelope-fill"
             viewBox="0 0 16 16"
@@ -199,8 +207,8 @@
         <li class="social-media-link">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
+            width="32"
+            height="32"
             fill="currentColor"
             class="bi bi-twitter"
             viewBox="0 0 16 16"
@@ -213,8 +221,8 @@
         <li class="social-media-link">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
+            width="32"
+            height="32"
             fill="currentColor"
             class="bi bi-facebook"
             viewBox="0 0 16 16"
@@ -227,8 +235,8 @@
         <li class="social-media-link">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
+            width="32"
+            height="32"
             fill="currentColor"
             class="bi bi-github"
             viewBox="0 0 16 16"
